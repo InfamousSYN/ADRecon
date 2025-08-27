@@ -1562,6 +1562,7 @@ namespace ADRecon
                     ComputerObj.Members.Add(new PSNoteProperty("whenCreated", AdComputer.Members["whenCreated"].Value));
                     ComputerObj.Members.Add(new PSNoteProperty("whenChanged", AdComputer.Members["whenChanged"].Value));
                     ComputerObj.Members.Add(new PSNoteProperty("Distinguished Name", AdComputer.Members["DistinguishedName"].Value));
+                    ComputerObj.Members.Add(new PSNoteProperty("msds-KeyCredentialLink", AdComputer.Members["msds-keycredentiallink"].Value));
                     return new PSObject[] { ComputerObj };
                 }
                 catch (Exception e)
